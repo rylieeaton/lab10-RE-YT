@@ -1,9 +1,18 @@
+# https://github.com/rylieeaton/lab10-RE-YT
+# Partner 1: Rylie Eaton
+# Partner 2: Yasmin Tatari
+
+
+
 """
 calculator.py
 - Defines functions used to create a simple calculator
 
 One function per operation, in order.
 """
+
+
+
 # First example
 import math
 
