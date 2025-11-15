@@ -31,15 +31,15 @@ def add(a, b):
     return ans
 
 
-def sub(a,b):
+def subtract(a,b):
     ans = a - b
     return ans
 
-def mul(a,b):
+def multiply(a,b):
     ans = a * b
     return ans
 
-def div(a,b):
+def divide(a,b):
     try:
         ans = a/b
     except ZeroDivisionError:
@@ -47,7 +47,7 @@ def div(a,b):
     ans = a/b
     return ans
 
-def log(a,b):
+def logarithm(a,b):
     try:
         ans = a > 0
         ans_2 = b > 0
@@ -57,7 +57,7 @@ def log(a,b):
     ans = math.log(a,b)
     return ans
 
-def pow(a,b):
+def exponent(a,b):
     ans = a ** b
     return ans
 
