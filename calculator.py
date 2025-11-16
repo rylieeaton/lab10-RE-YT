@@ -1,8 +1,6 @@
-# https://github.com/rylieeaton/lab10-RE-YT
+# https://github.com/rylieeaton/lab10-RE-YT  
 # Partner 1: Rylie Eaton
 # Partner 2: Yasmin Tatari
-
-
 
 """
 calculator.py
@@ -11,53 +9,34 @@ calculator.py
 One function per operation, in order.
 """
 
-
-
-# First example
 import math
 
 def square_root(a):
-    try:
-        ans = a < 0
-    except:
-        print("ValueError")
+    if a < 0:
+        raise ValueError("Cannot take square root of negative number")
     return math.sqrt(a)
 
-def hypotenuse(a,b):
-    return math.hypot(a,b)
+def hypotenuse(a, b):
+    return math.hypot(a, b)
 
 def add(a, b): 
-    ans = a + b
-    return ans
+    return a + b
 
+def subtract(a, b):
+    return a - b
 
-def subtract(a,b):
-    ans = a - b
-    return ans
+def mul(a, b):
+    return a * b
 
-def mul(a,b):
-    ans = a * b
-    return ans
+def div(a, b):
+    if a == 0:
+        raise ZeroDivisionError("Cannot divide by zero")
+    return b / a
 
-def div(a,b):
-    try:
-        ans = a/b
-    except ZeroDivisionError:
-        print("ZeroDivisionError")
-    ans = a/b
-    return ans
+def logarithm(a, b):
+    if a <= 0 or b <= 0:
+        raise ValueError("Both base and argument must be positive")
+    return math.log(b, a)
 
-def logarithm(a,b):
-    try:
-        ans = a > 0
-        ans_2 = b > 0
-    except ValueError:
-        print("ValueError")
-
-    ans = math.log(a,b)
-    return ans
-
-def exp(a,b):
-    ans = a ** b
-    return ans
-
+def exp(a, b):
+    return a ** b
